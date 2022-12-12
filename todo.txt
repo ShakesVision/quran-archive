@@ -2,3 +2,6 @@ DONE IN QURAN_FULL, TODO IN INDIVIDUAL JUZ
 bism find_replace
 double-space to single
 - tatweel remove
+
+IMP resources:
+https://hausadictionary.com/Category:TODO (e.g. search in page: quranwbw)
