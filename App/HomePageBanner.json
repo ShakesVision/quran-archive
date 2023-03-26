@@ -3,6 +3,8 @@
   "button": {
     "show": true,
     "text": "Contribute",
+    "color": "primary",
+    "fill": "outline",
     "icon": {
       "show": true,
       "src": "assets/icon/hand-holding.svg",
@@ -12,6 +14,7 @@
   "clickAction": "about",
   "style": {
     "boxShadow": "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
-    "backgroundImage": "linear-gradient(288deg, var(--ion-color-secondary) 0%, var(--ion-color-light) 100%)"
+    "backgroundImage": "linear-gradient(288deg, var(--ion-color-secondary) 0%, var(--ion-color-light) 100%)",
+    "common": ""
   }
 }
