@@ -1,106 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Progress</title>
-    <style>
-      .completed li {
-        position: relative;
-      }
-      .completed li::before {
-        content: "☑ ";
-        position: absolute;
-        left: -38px;
-        top: -4px;
-        font-size: large;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="progress">
-      <h3>&#x23F0; In Progress</h3>
-      <ol>
-        <li>
-          Export text for user's choice. Instead of pointing to githubraw,
-          extract say juz 29 using page numbers and allow copy/save text file
-          etc.
-          <p>
-            Can also give options to copy: line, page, surah, juz, ayah, ruku &&
-            same for translation.
-          </p>
-        </li>
-        <li>Implement "Jump to Ayah number" similar to "Ruku number".</li>
-        <li>Add manual bookmarks, preferably with 'line number'.</li>
-      </ol>
-    </div>
-    <div class="future">
-      <h3>&#x1F680; Future Plans</h3>
-      <ol>
-        <li>
-          Word by word translation mode below 15 line text like Hafiz Nazar
-          Ahmad version
-        </li>
-        <li>
-          With translation mode (Implemented modes are 1. Show on click, 2. Show
-          only translation and hide Arabic) now 3. Translation lines
-          <i>below</i> Arabic.
-        </li>
-        <li>
-          Tajweed rules highlight. Color code the text on the go,
-          programmatically.
-        </li>
 
-        <li>
-          Click - open translation, Double click - copy, Long press - more
-          options (copy ayah, ruku, page, same for translation, listen to Ayah,
-          words, root words etc.)
-        </li>
-        <li>
-          Listen to individual ayah on long press should have repetition etc.
-          options for Hifz assistance.
-        </li>
-        <li>Scan pages caching for faster load.</li>
-      </ol>
-    </div>
-    <div class="completed">
-      <h3>&#x2705; Completed</h3>
-      <ol>
-        <li>Dynamic content integration for pages like Help, Download etc.</li>
-        <li>
-          Use only 1 file for all Quran and extract all data programmatically
-          from it. (Instead of using separate files for each Juz/Surah).
-        </li>
-        <li>Listen to the recitation of the "current page".</li>
-        <li>
-          Continue the recitation to the next page if not stopped, and so on.
-        </li>
-        <li>
-          Add page flip sound for better imagination for Hifz, and Bismillah if
-          new Surah starts in the middle.
-        </li>
-        <li>
-          Memorize track should also reflect on Juz list page and highlight the
-          % for motivation.
-        </li>
-        <li>
-          Add (preferably dynamic) list of Surahs recommended for memorizations.
-        </li>
-        <li>
-          Pass target surah pages by filtering full quran by index. e.g: To read
-          36. Yaseen, pass pages for surahs 36 & 37 i.e. 441-446.
-          (surahPageNumbers array) Can use startLineNumber for precise content
-          serve.
-        </li>
-        <li>
-          Home page banner should be dynamic and customizable from backend.
-          Would help send updates/important messages.
-        </li>
-        <li>
-          View scan page on Unicode version too, for comparison / verification.
-        </li>
-      </ol>
-    </div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progress</title>
+  <style>
+    .completed li {
+      position: relative;
+    }
+
+    .completed li::before {
+      content: "☑ ";
+      position: absolute;
+      left: -38px;
+      top: -4px;
+      font-size: large;
+      color: darkseagreen;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="progress">
+    <h3>&#x23F0; In Progress</h3>
+    <ol>
+      <li>Implement "Jump to Ayah number" similar to "Ruku number".</li>
+      <li>Add manual bookmarks, preferably with 'line number'.</li>
+      <li>
+        Export text for user's choice. Extract say juz 29 using page numbers and allow copy/save text file
+        etc.
+        <p>
+          Can also give options to copy: line, page, surah, juz, ayah, ruku &
+          same for translation.
+        </p>
+      </li>
+    </ol>
+  </div>
+  <div class="future">
+    <h3>&#x1F680; Future Plans</h3>
+    <ol>
+      <li>
+        Word by word translation mode below 15 line text like Hafiz Nazar
+        Ahmad version
+      </li>
+      <li>
+        With translation mode (Implemented modes are 1. Show on click, 2. Show
+        only translation and hide Arabic) now 3. Translation lines
+        <i>below</i> Arabic.
+      </li>
+      <li>
+        Tajweed rules highlight. Color code the text on the go,
+        programmatically.
+      </li>
+
+      <li>
+        Click - open translation, Double click - copy, Long press - more
+        options (copy ayah, ruku, page, same for translation, listen to Ayah,
+        words, root words etc.)
+      </li>
+      <li>
+        Listen to individual ayah on long press should have repetition etc.
+        options for Hifz assistance.
+      </li>
+      <li>Scan pages offline save for faster load.</li>
+    </ol>
+  </div>
+  <div class="completed">
+    <h3>&#x2705; Completed</h3>
+    <ol>
+      <li>Dynamic content integration for pages like Help, Download etc.</li>
+      <li>
+        Use only 1 file for all Quran and extract all data programmatically
+        from it. (Instead of using separate files for each Juz/Surah).
+      </li>
+      <li>Listen to the recitation of the "current page".</li>
+      <li>
+        Continue the recitation to the next page if not stopped, and so on.
+      </li>
+      <li>
+        Add page flip sound for better imagination for Hifz, and Bismillah if
+        new Surah starts in the middle.
+      </li>
+      <li>
+        Memorize track should also reflect on Juz list page and highlight the
+        % for motivation.
+      </li>
+      <li>
+        Add (preferably dynamic) list of Surahs recommended for memorizations.
+      </li>
+      <li>
+        Pass target surah pages by filtering full quran by index. e.g: To read
+        36. Yaseen, pass pages for surahs 36 & 37 i.e. 441-446.
+        (surahPageNumbers array) Can use startLineNumber for precise content
+        serve.
+      </li>
+      <li>
+        Home page banner should be dynamic and customizable from backend.
+        Would help send updates/important messages.
+      </li>
+      <li>
+        View scan page on Unicode version too, for comparison / verification.
+      </li>
+      <li>In Scan view, cache/pre-load the next and previous pages for faster load.</li>
+    </ol>
+  </div>
+</body>
+
 </html>
