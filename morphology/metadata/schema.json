@@ -1,0 +1,22 @@
+{
+  "surah": "integer",
+  "ayah": "integer",
+  "tokens": [
+    {
+      "index": "integer",
+      "text": "string",
+      "type": "string",
+      "color": "string",
+      "x": "float",
+      "y": "float"
+    }
+  ],
+  "relations": [
+    {
+      "from_index": "integer",
+      "to_index": "integer",
+      "label": "string",
+      "color": "string"
+    }
+  ]
+}
