@@ -131,3 +131,5 @@ dist
 
 # Test text file
 TEST.txt
+# Ignore downloaded images
+morphology/word_images/
